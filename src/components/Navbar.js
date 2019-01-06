@@ -31,35 +31,11 @@ const Navbar = class extends React.Component {
  render() {
    return (
 
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item" title="Logo">
-          かこログ
-        </Link>
-        {/* Hamburger menu */}
-        <div className="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div id="navMenu" className="navbar-menu">
-        <div className="navbar-start has-text-centered u-display-none">
-          <Link className="navbar-item" to="/about">
-            About
-          </Link>
-          <Link className="navbar-item" to="/products">
-            Products
-          </Link>
-          <Link className="navbar-item" to="/contact">
-            Contact
-          </Link>
-          <Link className="navbar-item" to="/contact/examples">
-            Form Examples
-          </Link>
-        </div>
-      </div>
+  <nav>
+    <div className="container u-ta-c">
+      <Link to="/" className="c-title" title="Logo">
+        かこログ
+      </Link>
     </div>
   </nav>
   )}
