@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
 
@@ -31,8 +32,8 @@ const Navbar = class extends React.Component {
 
   <nav>
     <div className="container u-ta-c">
-      <Link to="/" className="c-title" title="Logo">
-        かこログ
+      <Link to="/" className="c-title" title="かこログlogo">
+        <img src={logo} alt="かこログ" className="c-title__image" />
       </Link>
     </div>
   </nav>
