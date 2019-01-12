@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    url: `https://kacolog.netlify.com`,
     title: 'かこログ',
     description: '日々勉強していることを過去ログとして残していきます。',
   },

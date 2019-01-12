@@ -11,6 +11,7 @@ const TemplateWrapper = ({ children }) => (
       query HeadingQuery {
           site {
             siteMetadata {
+              url,
               title,
               description,
             }
@@ -33,8 +34,8 @@ const TemplateWrapper = ({ children }) => (
 
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.png" />
+          <meta property="og:url" content={data.site.siteMetadata.url} />
+          <meta property="og:image" content={data.site.siteMetadata.url + "/img/og-image.png"} />
         </Helmet>
         <Navbar />
         <div>{children}</div>
