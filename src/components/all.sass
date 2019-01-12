@@ -1,8 +1,11 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+// color
 $kaldi-red: #2391dc
 $kaldi-red-invert: #fff
+$blue: #42A2DE
 
+// alias
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #b9dbf1
@@ -53,6 +56,17 @@ body
   letter-spacing: 1px
   p
     letter-spacing: 1px
+
+.l-footer
+  padding: 2rem
+  color: $blue
+  text-align: center
+  background: $body-color
+  &__link
+    color: $blue
+    text-decoration: underline
+
+
 
 // Helper Classes
 .full-width-image-container
