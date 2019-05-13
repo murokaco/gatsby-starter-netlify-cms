@@ -20,7 +20,7 @@ body
   padding: 40px 0 0
   font-size: 40px
   font-weight: bold
-  color: #6d9ec1
+  color: #2a5673
   font-family: "Hiragino Sans"
   &:hover
     opacity: .7
@@ -46,16 +46,25 @@ body
     margin-bottom: 1.5rem
     margin-top: 0
 
-.c-content
+@media screen and (min-width: 1280px)
+  .section
+    .container
+      max-width: 700px
+
+.c-content.content
   border: 4px solid #a4cbe4
   background: white
   border-radius: 6px
-  padding: 2rem
+  padding: 4rem
   line-height: 1.8
-  color: #333
+  color: #142e40
   letter-spacing: 1px
+  overflow: hidden
   p
+    line-height: 2
     letter-spacing: 1px
+  h1,h2,h3,h4,h5,h6 
+    color: #2a5673
 
 .l-footer
   padding: 2rem
@@ -90,5 +99,6 @@ body
 
 .u-display-none
   display: none !important
+
 
 @import "~bulma"
